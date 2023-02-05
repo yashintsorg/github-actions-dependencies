@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-        echo 'Setup completed'
+          echo 'Setup completed'
       
   build: 
     needs: setup
     runs-on: ubuntu-latest
     steps: 
       - run: |
-        echo 'Build is now safe to run'
+          echo 'Build is now safe to run'
