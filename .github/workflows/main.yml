@@ -1,0 +1,20 @@
+name: Dependency management in GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  setup: 
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+        echo 'Setup completed'
+      
+  build: 
+    needs: setup
+    runs-on: ubuntu-latest
+    steps: 
+      - run: |
+        echo 'Build is now safe to run'
